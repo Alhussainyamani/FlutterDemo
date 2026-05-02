@@ -1,0 +1,14 @@
+name: ics410_dart_tutorial
+description: >
+  Comprehensive Dart programming language tutorial for ICS 410
+  (Programming Languages) at university. Covers basics through
+  advanced features: null safety, async, records, OOP, functional.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.25.0

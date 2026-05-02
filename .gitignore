@@ -1,0 +1,71 @@
+# === Dart ===
+.dart_tool/
+.packages
+build/
+pubspec.lock
+doc/api/
+
+# === Python (used by tools/) ===
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# === Node (mermaid-cli is installed globally; this is just defensive) ===
+node_modules/
+
+# === IDEs / editors ===
+*.iml
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# === macOS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# === Windows ===
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === Linux ===
+.directory
+.Trash-*
+
+# === Claude Code local state — do NOT commit ===
+.claude/
+
+# === Environment / secrets ===
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# === Logs / temp / backup ===
+*.log
+*.tmp
+*.bak
+
+# === Slide build script intermediates ===
+docs/assets/diagrams/_tmp/
+
+# === Internal tooling — public repo ships only deliverables ===
+# Python build scripts (slide + diagram generators)
+tools/
+# Internal build manifest used by the slide builder
+docs/assets/diagrams/manifest.json
+
+# === Unrelated docs (assignment-only, not for public release) ===
+# Course rubric / instructor's spec — keep out of the public repo
+Presentation-Guidelines.pdf
