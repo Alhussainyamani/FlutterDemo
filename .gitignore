@@ -57,6 +57,9 @@ Desktop.ini
 *.tmp
 *.bak
 
+# === MS Office / PowerPoint lock files ===
+~$*
+
 # === Slide build script intermediates ===
 docs/assets/diagrams/_tmp/
 

@@ -5,18 +5,13 @@
 
 **Audience:** both beginners *and* advanced programmers — early sections build from zero, later sections go deep on Dart 3 features.
 
-**Watch the video:** *[YouTube link goes here once uploaded]*
-
-> **Before submission / publication:** the items below are placeholders that must be replaced before recording or uploading.
-> - Producer names (`[Team Member 1/2/3]`) — appears in this README and `docs/SLIDES.md` (S01, S35)
-> - Repository URL (`<repo-link-placeholder>`, `<this-repo-url>`) — this README and `docs/SLIDES.md` (S01, S35)
-> - YouTube URL (`[YouTube link goes here once uploaded]`) — this README only
+**Watch the video:** [Dart: A Complete Tour on YouTube](https://youtu.be/s5GXMAW3OE4?si=W2iA4_6lcaba_Dhc)
 
 ---
 
 ## Producers
 
-Produced by **[Team Member 1]**, **[Team Member 2]**, **[Team Member 3]** — ICS 410, Spring 2026.
+Produced by **Alhussain Yamani**, **Abdulaziz Alarifi**, **Mohammed Murtada** — ICS 410, Spring 2026.
 
 ---
 
@@ -38,8 +33,8 @@ dart --version   # verify
 ### Clone and run
 
 ```bash
-git clone <this-repo-url>
-cd ics410-dart-tutorial
+git clone https://github.com/Alhussainyamani/FlutterDemo.git
+cd FlutterDemo
 dart pub get
 dart run lib/01_basics/variables_scopes.dart
 ```
@@ -57,7 +52,7 @@ Each file under `lib/` is **standalone** with its own `void main()` — run any 
 ## Repository Layout
 
 ```
-ics410-dart-tutorial/
+FlutterDemo/
 ├── README.md                     ← you are here
 ├── pubspec.yaml                  ← Dart project manifest
 ├── analysis_options.yaml         ← lint config
@@ -102,11 +97,15 @@ ics410-dart-tutorial/
 │   │   └── streams.dart
 │   └── 08_capstone/
 │       └── mini_project.dart
-└── docs/                         ← slide deck, diagrams, quiz, references
-    ├── SLIDES.md                 ← 35-slide deck content + speaker notes
-    ├── DIAGRAMS.md               ← 10 Mermaid / ASCII diagrams
+└── docs/                         ← slide deck and supporting material
+    ├── slides.pptx               ← compiled 41-slide deck (PowerPoint / Keynote)
+    ├── SLIDES.md                 ← deck source (titles, bullets, speaker notes)
+    ├── DIAGRAMS.md               ← 10 Mermaid / ASCII diagram sources
     ├── QUIZ.md                   ← 7-question MCQ + answer key
-    └── REFERENCES.md             ← curated further-reading list
+    ├── REFERENCES.md             ← curated further-reading list
+    └── assets/
+        ├── dart-logo.png
+        └── diagrams/             ← 10 rendered PNGs (embedded in slides.pptx)
 ```
 
 ---
@@ -210,8 +209,9 @@ All 32 example files run cleanly with `dart analyze` reporting **no issues**.
 
 ## Documentation
 
-- **[`docs/SLIDES.md`](docs/SLIDES.md)** — full 35-slide deck content with speaker notes (~30 min narration). Import into Keynote / PowerPoint / Google Slides.
-- **[`docs/DIAGRAMS.md`](docs/DIAGRAMS.md)** — 10 visuals (Mermaid + ASCII): compilation pipeline, type hierarchy, scope flow, control flow, pass-semantics memory diagram, OOP UML, mixin composition, async timeline, null-safety state, records destructuring.
+- **[`docs/slides.pptx`](docs/slides.pptx)** — the 41-slide PowerPoint / Keynote deck used in the video, with embedded diagrams, syntax-highlighted code, and ~30 min of speaker notes.
+- **[`docs/SLIDES.md`](docs/SLIDES.md)** — markdown source of the deck (titles, bullets, speaker notes per slide).
+- **[`docs/DIAGRAMS.md`](docs/DIAGRAMS.md)** — 10 Mermaid + ASCII diagram sources (rendered as PNGs in `docs/assets/diagrams/`): compilation pipeline, type hierarchy, scope flow, control flow, pass-semantics memory, OOP UML, mixin composition, async timeline, null-safety state, records destructuring.
 - **[`docs/QUIZ.md`](docs/QUIZ.md)** — 7-question MCQ quiz with answer key.
 - **[`docs/REFERENCES.md`](docs/REFERENCES.md)** — curated further-reading list (official docs, courses, books, articles, communities, tools).
 
@@ -235,4 +235,3 @@ You may use, modify, and redistribute these materials for any purpose with attri
 ---
 
 *Code along, experiment, break things. The best way to learn a language is to write code in it.*
-# FlutterDemo
